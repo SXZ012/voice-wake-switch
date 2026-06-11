@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -m py_compile config.py)",
+      "Bash(python3 -m py_compile vosk_asr.py)",
+      "Bash(python3 -m py_compile device_controller.py)",
+      "Bash(python3 -m py_compile mqtt_publisher.py)",
+      "Bash(python3 -m py_compile main.py)",
+      "Bash(wget *)",
+      "Bash(curl *)",
+      "WebSearch",
+      "Bash(unzip -o vosk-model-small-cn-0.22.zip)",
+      "Bash(xxd /Users/zhoujiahao/Desktop/AI项目/voice-wake-switch/vosk-model-small-cn-0.22/am/final.mdl)",
+      "Bash(xxd /Users/zhoujiahao/Desktop/AI项目/voice-wake-switch/vosk-model-small-cn-0.22/graph/HCLr.fst)",
+      "Bash(say -v '?')",
+      "Bash(say -v \"Tingting\" -o test_tts.aiff \"小派开灯\")",
+      "Bash(command -v ffmpeg)",
+      "Bash(ffmpeg -i test_tts.aiff -ar 16000 -ac 1 -sample_fmt s16 test_tts.wav -y)",
+      "Bash(command -v afconvert)",
+      "Bash(afconvert -f WAVE -d LEI16@16000 test_tts.aiff test_tts.wav)",
+      "Bash(python -m py_compile config.py)",
+      "Bash(python -m py_compile vosk_asr.py)",
+      "Bash(python -m py_compile main.py)"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+.env
+*.db
+vosk-model-small-cn-0.22/
